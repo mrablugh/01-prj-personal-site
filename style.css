@@ -12,12 +12,13 @@ html {
 	--color-primary-2: #9e2b34; /* mid red */
 	--color-primary-3: #f3c6c6; /* light red/pink accent */
 	--color-cream: #f5f2eb;
+	--color-text: #2b1a1a;
 }
 
 body {
 	margin: 0;
 	font-family: Arial, Helvetica, sans-serif;
-	color: #1f2a37;
+	color: var(--color-text);
 	background:
 		radial-gradient(circle at top, rgba(255, 255, 255, 0.25), transparent 30%),
 		linear-gradient(180deg, var(--color-primary) 0%, var(--color-cream) 28%, var(--color-cream) 72%, var(--color-primary) 100%);
@@ -144,7 +145,7 @@ img {
 	max-width: 56ch;
 	margin: 18px auto 0;
 	line-height: 1.7;
-	color: #d9e2f2;
+	color: var(--color-cream);
 }
 
 /* Section styles */
@@ -200,7 +201,7 @@ img {
 }
 
 .section-label-light {
-	color: #cad6f2;
+	color: #ffdfe0;
 }
 
 /* About section layout */
@@ -275,7 +276,7 @@ img {
 
 .project-card a {
 	font-weight: bold;
-	color: #22324f;
+	color: var(--color-primary-2);
 }
 
 /* Contact */
@@ -295,7 +296,7 @@ img {
 	padding: 12px 18px;
 	border-radius: 999px;
 	background: #f5f2eb;
-	color: #22324f;
+	color: var(--color-primary);
 	font-weight: bold;
 }
 
