@@ -2,10 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Personal Site</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Add your HTML content here -->
+  <!-- Top navigation helps visitors jump to each section quickly -->
+  <header class="topbar">
+    <div class="container nav-bar">
+      <a class="logo" href="#home">My Portfolio</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-links">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero section with a profile-style card inspired by the sample images -->
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="profile-card">
+          <div class="profile-photo" aria-hidden="true">JD</div>
+          <p class="eyebrow">Web Development Student</p>
+          <h1>Your Name Here</h1>
+          <p class="hero-text">
+            I am learning how to build websites, create projects, and grow my skills in HTML, CSS, and JavaScript.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me section explains who you are and what you want to build -->
+    <section id="about" class="section section-light">
+      <div class="container section-split">
+        <div class="section-image about-image" aria-hidden="true"></div>
+        <div>
+          <p class="section-label">About Me</p>
+          <h2>Learning to build clean and useful websites</h2>
+          <p>
+            I am a college student learning web development. I enjoy solving problems, making ideas come to life, and turning class projects into polished websites.
+          </p>
+          <p>
+            This site will grow with my course work and will eventually include the projects I create along the way.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills section uses simple tags so the page stays easy to edit -->
+    <section id="skills" class="section section-dark">
+      <div class="container">
+        <p class="section-label section-label-light">Skills</p>
+        <h2>Tools I am learning</h2>
+        <div class="skill-list">
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Responsive Design</span>
+          <span class="skill-tag">Problem Solving</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects section gives room for future assignments and portfolio pieces -->
+    <section id="projects" class="section section-light">
+      <div class="container">
+        <p class="section-label">Projects</p>
+        <h2>Work I plan to showcase</h2>
+        <div class="project-list">
+          <article class="project-card">
+            <h3>Project One</h3>
+            <p>A simple class project that demonstrates my first steps with HTML and CSS.</p>
+            <a href="#">View Project</a>
+          </article>
+          <article class="project-card">
+            <h3>Project Two</h3>
+            <p>A practice website that shows layout, color, and typography skills.</p>
+            <a href="#">View Project</a>
+          </article>
+          <article class="project-card">
+            <h3>Project Three</h3>
+            <p>A future project that will highlight what I learn later in the course.</p>
+            <a href="#">View Project</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact section makes it easy for someone to reach out -->
+    <section id="contact" class="section section-dark contact-section">
+      <div class="container contact-card">
+        <p class="section-label section-label-light">Contact Me</p>
+        <h2>Let’s connect</h2>
+        <p>
+          If you would like to get in touch, you can use the links below.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:yourname@example.com">Email Me</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
